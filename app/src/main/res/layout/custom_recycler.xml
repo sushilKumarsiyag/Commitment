@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp"
+    app:contentPadding="5dp"
+    android:id="@+id/cardview">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:onClick="delete"
+        android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task"
+        android:textColor="#fff"
+        android:onClick="delete"
+        android:textSize="20dp"
+
+        android:textStyle="italic"
+        android:layout_margin="5dp"
+        android:fontFamily="sans-serif"
+        />
+
+        <TextView
+            android:id="@+id/priority"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:onClick="delete"
+            android:textSize="1dp"
+            android:layout_alignParentRight="true"
+            android:textStyle="italic"
+            android:layout_margin="5dp"
+            />
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task"
+            android:textSize="10dp"
+            android:textColor="#fff"
+            android:textStyle="italic"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/task"
+           android:layout_toRightOf="@id/time"
+            />
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="task"
+            android:textSize="10dp"
+            android:textStyle="italic"
+            android:layout_below="@id/task"
+            android:fontFamily="sans-serif"
+            android:textColor="#fff"
+            android:layout_marginLeft="5dp"
+            />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>
+</RelativeLayout>
